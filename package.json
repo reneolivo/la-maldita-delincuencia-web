@@ -1,0 +1,38 @@
+{
+  "name": "la-maldita-delincuencia-web",
+  "version": "1.0.0",
+  "description": "Página web de La Maldita Delincuencia",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reneolivo/la-maldita-delincuencia-web.git"
+  },
+  "keywords": [
+    "angular",
+    "materializecss",
+    "delincuencia"
+  ],
+  "author": "René Olivo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/reneolivo/la-maldita-delincuencia-web/issues"
+  },
+  "homepage": "https://github.com/reneolivo/la-maldita-delincuencia-web#readme",
+  "dependencies": {
+    "angular": "^1.4.8",
+    "materialize-sass": "^0.95.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.2.1",
+    "babel-preset-es2015": "^6.1.18",
+    "browser-sync": "^2.10.0",
+    "del": "^0.1.3",
+    "gulp": "^3.9.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-sass": "^2.1.0",
+    "run-sequence": "^1.1.5"
+  }
+}

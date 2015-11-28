@@ -1,0 +1,7 @@
+@import '../../node_modules/materialize-sass/sass/materialize.scss';
+
+body { background: #F5F5F5; }
+
+#wrapper {
+  @extend .container;
+}
