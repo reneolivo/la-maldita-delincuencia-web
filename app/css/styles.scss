@@ -48,14 +48,30 @@ header#main-header {
 
 main#main-content {
   article {
-    @extend .card;
+    @extend .card, .row;
     margin: 0 0 3em 0;
     padding: 25px;
 
-    h2 {
-      margin-top: 0;
-      font-size: 2.4em;
-      color: #cf4900;
+    figure.map {
+      @extend .col, .s4;
+      margin: 0;
+
+      iframe {
+        width: 100%;
+      }
+    }
+
+    section.content {
+      @extend .col, .s8;
+
+      h2 {
+        margin-top: 0;
+        font-size: 2.4em;
+      }
+    }
+
+    .social {
+      a.facebook { }
     }
   }
 }
