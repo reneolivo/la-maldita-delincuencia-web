@@ -2,6 +2,18 @@ export default {
   source: './app/',
   build: './build/',
   port: 8080,
+  fonts: {
+    src: [
+      'app/fonts/**/*.*',
+      'node_modules/materialize-css/font/**/*.*'
+    ],
+    dest: 'build/fonts/',
+    destUrl: '/fonts/'
+  },
+  images: {
+    src: 'app/images/**/*.*',
+    dest: 'build/images/'
+  },
   scripts: {
     src: 'app/js/main.js',
     dest: 'build/js/'
@@ -12,12 +24,5 @@ export default {
   },
   views: {
     index: 'app/index.html'
-  },
-  fonts: {
-    src: [
-      'node_modules/materialize-css/font/**/*.*'
-    ],
-    dest: 'build/fonts/',
-    destUrl: '/fonts/'
   }
 };

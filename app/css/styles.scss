@@ -4,8 +4,49 @@ body { background: #F5F5F5; }
 
 #wrapper {
   @extend .container;
+  margin-top: 100px;
+  width: 50vw;
+
+  &:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 300px;
+    //Credit:
+    //http://cliparts.co/clipart/118823
+    background: url('/images/raccoon.png') no-repeat;
+    background-position: center 100px ;
+    background-attachment: fixed;
+  }
 }
 
 header#main-header {
-  @extend .navbar-fixed;
+  @extend nav;
+  position: fixed;
+  margin: 0;
+  padding: 0 15px;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1;
+  background: #212121;
+
+  h1 {
+    margin-top: 0.4em;
+    font-size: 32px;
+  }
+}
+
+main#main-content {
+  article {
+    @extend .card;
+    margin: 0 0 3em 0;
+    padding: 25px;
+
+    h2 {
+      margin-top: 0;
+      font-size: 2.4em;
+      color: #cf4900;
+    }
+  }
 }
