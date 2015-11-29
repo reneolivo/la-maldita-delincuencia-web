@@ -23,6 +23,7 @@
   "homepage": "https://github.com/reneolivo/la-maldita-delincuencia-web#readme",
   "dependencies": {
     "angular": "^1.4.8",
+    "angular-ui-router": "^0.2.15",
     "animate.css": "^3.4.0",
     "font-awesome": "^4.4.0",
     "jquery": "^2.1.4",
@@ -32,9 +33,11 @@
   "devDependencies": {
     "babel-core": "^6.2.1",
     "babel-preset-es2015": "^6.1.18",
+    "babelify": "^7.2.0",
     "browser-sync": "^2.10.0",
     "del": "^0.1.3",
     "gulp": "^3.9.0",
+    "gulp-angular-templatecache": "^1.8.0",
     "gulp-browserify": "^0.5.1",
     "gulp-flatten": "^0.2.0",
     "gulp-rework": "^1.1.0",

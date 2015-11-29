@@ -24,6 +24,8 @@ export default {
     dest: 'build/css/'
   },
   views: {
-    index: 'app/index.html'
+    index: 'app/index.html',
+    src: 'app/views/**/*.html',
+    dest: 'app/js/'
   }
 };
