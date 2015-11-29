@@ -5,7 +5,8 @@ export default {
   fonts: {
     src: [
       'app/fonts/**/*.*',
-      'node_modules/materialize-css/font/**/*.*'
+      'node_modules/materialize-css/font/**/*.*',
+      'node_modules/font-awesome/fonts/**/*.*'
     ],
     dest: 'build/fonts/',
     destUrl: '/fonts/'
