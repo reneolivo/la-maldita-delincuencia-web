@@ -3,8 +3,13 @@
 import angular from 'angular';
 
 class HomeCtrl {
-  constructor() {
+  constructor(ArticlesService) {
+    this.ArticlesService = ArticlesService;
     this.articles = [];
+
+    this.ArticlesService.getAll().then((articles) => {
+      this.articles = articles;
+    });
   }
 }
 

@@ -23,6 +23,7 @@
   "homepage": "https://github.com/reneolivo/la-maldita-delincuencia-web#readme",
   "dependencies": {
     "angular": "^1.4.8",
+    "angular-timeago": "^0.2.4",
     "angular-ui-router": "^0.2.15",
     "animate.css": "^3.4.0",
     "font-awesome": "^4.4.0",
