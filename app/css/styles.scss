@@ -1,5 +1,6 @@
 @import '../../node_modules/materialize-css/sass/materialize.scss';
 @import '../../node_modules/font-awesome/scss/font-awesome.scss';
+@import '../../node_modules/animate.css/animate';
 
 @font-face {
   //Credit:
@@ -78,7 +79,7 @@ main#main-content {
       right: 30px;
 
       a {
-        @extend .light-blue-text, .text-darken-3;
+        @extend  .light-blue-text, .text-darken-3;
         display: inline-block;
         visibility: hidden;
         margin-right: 0.5em;
@@ -87,7 +88,11 @@ main#main-content {
           visibility: visible;
           font-size: 2em;
         }
-        &:hover { @extend .text-darken-1; }
+        &:hover {
+          @extend .text-darken-1, .animated, .tada;
+          width: 2.5em;
+          &:before { font-size: 3em; }
+        }
       }
       a.facebook { @extend .fa, .fa-facebook-official; }
       a.twitter { @extend .fa, .fa-twitter; }
