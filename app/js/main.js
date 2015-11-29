@@ -1,7 +1,7 @@
 window.jQuery = require('jquery');
 require('../../node_modules/materialize-css/js/materialize');
 
-import angular from 'angular';
+import angular  from 'angular';
 
 import 'angular-ui-router';
 import './templates';
@@ -12,4 +12,7 @@ var app = angular.module('lmd.app', [
 ]);
 
 import config from './setup/config';
+
+require('./controllers/home');
+
 app.config(config);

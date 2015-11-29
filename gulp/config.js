@@ -17,6 +17,7 @@ export default {
   },
   scripts: {
     src: 'app/js/main.js',
+    watch: 'app/js/**/*.js',
     dest: 'build/js/'
   },
   styles: {

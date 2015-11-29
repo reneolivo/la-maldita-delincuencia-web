@@ -10,7 +10,8 @@ export default function AppConfig($locationProvider, $stateProvider, $urlRouterP
     })
     .state('base.home', {
       url: '/',
-      templateUrl: '/views/home.html'
+      templateUrl: '/views/home.html',
+      controller: 'HomeCtrl as home'
     });
 
     $urlRouterProvider.otherwise('/');

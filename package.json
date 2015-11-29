@@ -27,8 +27,7 @@
     "animate.css": "^3.4.0",
     "font-awesome": "^4.4.0",
     "jquery": "^2.1.4",
-    "materialize-css": "^0.97.3",
-    "materialize-sass": "^0.95.2"
+    "materialize-css": "^0.97.3"
   },
   "devDependencies": {
     "babel-core": "^6.2.1",
