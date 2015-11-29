@@ -15,8 +15,9 @@ export default {
   },
   fonts: {
     src: [
-      'node_modules/materialize-sass/font/**/*.*'
+      'node_modules/materialize-css/font/**/*.*'
     ],
-    dest: 'build/fonts/'
+    dest: 'build/fonts/',
+    destUrl: '/fonts/'
   }
 };
