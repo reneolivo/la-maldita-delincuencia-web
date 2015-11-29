@@ -3,14 +3,20 @@ export default {
   build: './build/',
   port: 8080,
   scripts: {
-    src: 'app/js/**/*.js',
-    dest: 'build/js'
+    src: 'app/js/main.js',
+    dest: 'build/js/'
   },
   styles: {
     src: 'app/css/**/*.scss',
-    dest: 'build/css'
+    dest: 'build/css/'
   },
   views: {
     index: 'app/index.html'
+  },
+  fonts: {
+    src: [
+      'node_modules/materialize-sass/font/**/*.*'
+    ],
+    dest: 'build/fonts/'
   }
 };

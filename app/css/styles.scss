@@ -5,3 +5,7 @@ body { background: #F5F5F5; }
 #wrapper {
   @extend .container;
 }
+
+header#main-header {
+  @extend .navbar-fixed;
+}
