@@ -1,6 +1,11 @@
 'use strict';
 
-export default function AppConfig($locationProvider, $stateProvider, $urlRouterProvider) {
+export default function AppConfig(uiGmapGoogleMapApiProvider, $locationProvider, $stateProvider, $urlRouterProvider) {
+  uiGmapGoogleMapApiProvider.configure({
+    v: '3.20'
+  });
+
+  /* STATES */
   $locationProvider.html5Mode(false);
 
   $stateProvider

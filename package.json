@@ -23,11 +23,14 @@
   "homepage": "https://github.com/reneolivo/la-maldita-delincuencia-web#readme",
   "dependencies": {
     "angular": "^1.4.8",
+    "angular-google-maps": "^2.2.1",
+    "angular-simple-logger": "^0.1.5",
     "angular-timeago": "^0.2.4",
     "angular-ui-router": "^0.2.15",
     "animate.css": "^3.4.0",
     "font-awesome": "^4.4.0",
     "jquery": "^2.1.4",
+    "lodash": "^3.10.1",
     "materialize-css": "^0.97.3"
   },
   "devDependencies": {

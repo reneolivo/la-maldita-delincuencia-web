@@ -5,9 +5,10 @@
     <title>La Maldita Delincuencia</title>
     <link type="text/css" rel="stylesheet"  href="css/styles.css" />
   </head>
-  <body>
+  <body ng-controller="GlobalCtrl as global">
     <div ui-view></div>
 
+    <script src='//maps.googleapis.com/maps/api/js'></script>
     <script src="js/main.js"></script>
     <script>
       angular.bootstrap(document, ['lmd.app']);

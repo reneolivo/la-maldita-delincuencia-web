@@ -1,7 +1,19 @@
 <section id="page-home">
   <article ng-repeat="article in home.articles">
-    <figure class="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60545.1319613921!2d-69.98200367136724!3d18.480454322579074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89f1107ea5ab%3A0xd6c587b82715c164!2sSanto+Domingo%2C+Dominican+Republic!5e0!3m2!1sen!2sus!4v1448768847148" width="300" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <figure class="map" ng-init="article.latLong = {latitude: article.location.coordinates[0], longitude: article.location.coordinates[1]}">
+      <div
+        ui-gmap-google-map
+        center="article.latLong"
+        options="{
+          styles: global.settings.mapStyle,
+          draggable: false,
+          scrollwheel: false,
+          disableDefaultUI: true
+        }"
+        zoom="15"
+      >
+        <div idkey="'art.'+article._id" ui-gmap-marker coords="article.latLong"></div>
+      </div>
     </figure>
     <section class="content">
       <h2>{{ article.title }}</h2>
