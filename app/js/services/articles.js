@@ -8,9 +8,9 @@ class ArticlesService {
     this.settings = settings;
   }
 
-  getAll() {
+  getAll(query) {
     return this.http
-      .get(this.settings.apiUrl + '/articles')
+      .get(this.settings.apiUrl + '/articles', {params: query})
       .then((response) => {
         return response.data;
       });

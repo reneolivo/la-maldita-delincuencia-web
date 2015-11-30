@@ -31,7 +31,8 @@
     "font-awesome": "^4.4.0",
     "jquery": "^2.1.4",
     "lodash": "^3.10.1",
-    "materialize-css": "^0.97.3"
+    "materialize-css": "^0.97.3",
+    "ng-infinite-scroll": "^1.2.0"
   },
   "devDependencies": {
     "babel-core": "^6.2.1",

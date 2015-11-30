@@ -1,4 +1,4 @@
-<section id="page-home">
+<section id="page-home" infinite-scroll="home.loadNextPage()" infinite-scroll-distance="3">
   <article ng-repeat="article in home.articles">
     <figure class="map">
       <img ng-src="{{ article.location.coordinates | staticMap }}">
@@ -14,4 +14,6 @@
       <a class="google-plus" href="#">G+</a>
     </div>
   </article>
+
+  <img class="loading" src="/images/loading.gif" alt="loading" ng-if="home.loadingArticles" />
 </section>

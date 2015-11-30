@@ -9,12 +9,14 @@ import 'angular-ui-router';
 import 'angular-timeago';
 import 'angular-simple-logger';
 import 'angular-google-maps';
+import 'ng-infinite-scroll';
 
 var app = angular.module('lmd.app', [
   'templates',
   'ui.router',
   'yaru22.angular-timeago',
-  'uiGmapgoogle-maps'
+  'uiGmapgoogle-maps',
+  'infinite-scroll'
 ]);
 
 import config from './setup/config';
