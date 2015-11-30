@@ -58,13 +58,7 @@ main#main-content {
       @extend .col, .s4;
       margin: 0;
 
-      div[ui-gmap-google-map] {
-        width: 100%;
-
-        .angular-google-map-container {
-          height: 300px;
-        }
-      }
+      img { width: 100%; }
     }
 
     section.content {

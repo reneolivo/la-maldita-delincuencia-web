@@ -1,19 +1,7 @@
 <section id="page-home">
   <article ng-repeat="article in home.articles">
-    <figure class="map" ng-init="article.latLong = {latitude: article.location.coordinates[0], longitude: article.location.coordinates[1]}">
-      <div
-        ui-gmap-google-map
-        center="article.latLong"
-        options="{
-          styles: global.settings.mapStyle,
-          draggable: false,
-          scrollwheel: false,
-          disableDefaultUI: true
-        }"
-        zoom="15"
-      >
-        <div idkey="'art.'+article._id" ui-gmap-marker coords="article.latLong"></div>
-      </div>
+    <figure class="map">
+      <img ng-src="{{ home.staticMapSrc(article.location.coordinates); }}">
     </figure>
     <section class="content">
       <h2>{{ article.title }}</h2>
