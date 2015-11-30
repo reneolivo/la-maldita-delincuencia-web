@@ -1,7 +1,7 @@
 <section id="page-home">
   <article ng-repeat="article in home.articles">
     <figure class="map">
-      <img ng-src="{{ home.staticMapSrc(article.location.coordinates); }}">
+      <img ng-src="{{ article.location.coordinates | staticMap }}">
     </figure>
     <section class="content">
       <h2>{{ article.title }}</h2>

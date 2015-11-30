@@ -22,6 +22,7 @@ import config from './setup/config';
 require('./settings');
 require('./controllers/global');
 require('./controllers/home');
+require('./filters/static-map');
 require('./services/articles');
 
 app.config(config);
